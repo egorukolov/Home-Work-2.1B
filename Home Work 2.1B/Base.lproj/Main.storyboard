@@ -37,6 +37,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtomPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKU-in-NV4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,6 +64,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3IP-0b-2zZ"/>
                     </view>
+                    <connections>
+                        <outlet property="greenSignalView" destination="xpg-0B-9b2" id="Ri2-s9-ZMC"/>
+                        <outlet property="redSignalView" destination="qFV-HJ-h2A" id="x0k-g8-VmN"/>
+                        <outlet property="startNextButtom" destination="kTX-FN-ZjN" id="5AM-We-gGi"/>
+                        <outlet property="yellowSignalView" destination="hFj-qk-Vgd" id="vKV-Mg-vFI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
