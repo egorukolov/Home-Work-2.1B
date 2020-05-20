@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,61 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Home_Work_2_1B" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdP-9e-ar6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFV-HJ-h2A">
+                                <rect key="frame" x="131" y="92" width="152" height="160.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-qk-Vgd">
+                                <rect key="frame" x="131" y="283.5" width="152" height="160"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-0B-9b2">
+                                <rect key="frame" x="131" y="476.5" width="152" height="160.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTX-FN-ZjN">
+                                <rect key="frame" x="71.5" y="749" width="271" height="66"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="271" id="gDD-I3-RYQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kTX-FN-ZjN" firstAttribute="centerX" secondItem="CdP-9e-ar6" secondAttribute="centerX" id="0D1-sB-g8e"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="height" secondItem="qFV-HJ-h2A" secondAttribute="height" id="1e1-RX-c2c"/>
+                            <constraint firstItem="hFj-qk-Vgd" firstAttribute="height" secondItem="qFV-HJ-h2A" secondAttribute="height" id="2KR-rT-mcr"/>
+                            <constraint firstItem="hFj-qk-Vgd" firstAttribute="leading" secondItem="3IP-0b-2zZ" secondAttribute="leading" constant="131" id="B5d-Tj-z8b"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="top" secondItem="hFj-qk-Vgd" secondAttribute="bottom" constant="33" id="BLK-dn-VH9"/>
+                            <constraint firstItem="hFj-qk-Vgd" firstAttribute="top" secondItem="qFV-HJ-h2A" secondAttribute="bottom" constant="31" id="E1r-oZ-Cip"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="top" secondItem="hFj-qk-Vgd" secondAttribute="bottom" constant="33" id="FOp-iJ-DII"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="leading" secondItem="3IP-0b-2zZ" secondAttribute="leading" constant="131" id="IGj-ZA-yjw"/>
+                            <constraint firstItem="hFj-qk-Vgd" firstAttribute="width" secondItem="qFV-HJ-h2A" secondAttribute="width" id="Kiv-H5-leF"/>
+                            <constraint firstItem="hFj-qk-Vgd" firstAttribute="centerX" secondItem="CdP-9e-ar6" secondAttribute="centerX" id="VG3-6G-WWB"/>
+                            <constraint firstItem="qFV-HJ-h2A" firstAttribute="leading" secondItem="3IP-0b-2zZ" secondAttribute="leading" constant="131" id="aGb-zA-ban"/>
+                            <constraint firstItem="qFV-HJ-h2A" firstAttribute="centerX" secondItem="CdP-9e-ar6" secondAttribute="centerX" id="bY8-DC-4U4"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="centerX" secondItem="CdP-9e-ar6" secondAttribute="centerX" id="eBk-PR-ZV4"/>
+                            <constraint firstItem="xpg-0B-9b2" firstAttribute="width" secondItem="qFV-HJ-h2A" secondAttribute="width" id="eE8-qo-uKW"/>
+                            <constraint firstItem="kTX-FN-ZjN" firstAttribute="top" secondItem="xpg-0B-9b2" secondAttribute="bottom" constant="112" id="nf8-xM-Jqa"/>
+                            <constraint firstItem="3IP-0b-2zZ" firstAttribute="bottom" secondItem="xpg-0B-9b2" secondAttribute="bottom" constant="225" id="r5v-5X-Ffx"/>
+                            <constraint firstItem="qFV-HJ-h2A" firstAttribute="top" secondItem="3IP-0b-2zZ" secondAttribute="top" constant="48" id="vdx-eE-hqK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3IP-0b-2zZ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
 </document>
